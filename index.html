@@ -59,14 +59,18 @@
   </head>
   <body>
     <form>
-      <h1>Farewell Party Survey Form</h1>
+      <h1>Farewell Party survery Form</h1>
 
       <label for="name">Name</label>
       <input type="text" id="name" placeholder="Enter your name" />
 
       <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Example@gmail.come" />
-
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Example@gmail.com"
+      />
       <label for="age">Age</label>
       <input type="number" id="age" placeholder="Enter your age" min="1" />
 
@@ -83,7 +87,7 @@
       <input type="radio" name="attend" id="no" value="no" />
       <label for="no">No</label>
 
-      <label>What did you like about the program?</label>
+      <label>what did you like about program</label>
       <input type="checkbox" id="training" /><label for="training">
         Training</label
       ><br />
@@ -108,6 +112,7 @@
 
       <input type="reset" value="Reset" />
       <input type="submit" value="Submit" />
+      <input type="reset" />
     </form>
   </body>
 </html>
