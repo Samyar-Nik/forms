@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      form {
+        max-width: 500px;
+        margin: auto;
+        border: 2px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Georgia", serif;
+        font-size: 24px;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+
+      textarea {
+        height: 60px;
+        resize: vertical;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        padding: 6px 12px;
+        margin-top: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Farewell Party Survey Form</h1>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Example@gmail.come" />
+
+      <label for="age">Age</label>
+      <input type="number" id="age" placeholder="Enter your age" min="1" />
+
+      <label for="role">Which option best describes you</label>
+      <select id="role">
+        <option value="student">Student</option>
+        <option value="intern">Intern</option>
+        <option value="employee">Employee</option>
+      </select>
+
+      <label>Will you attend the party?</label>
+      <input type="radio" name="attend" id="yes" value="yes" />
+      <label for="yes">Yes</label>
+      <input type="radio" name="attend" id="no" value="no" />
+      <label for="no">No</label>
+
+      <label>What did you like about the program?</label>
+      <input type="checkbox" id="training" /><label for="training">
+        Training</label
+      ><br />
+      <input type="checkbox" id="industry" /><label for="industry">
+        The Learning Sessions from Industry Experts</label
+      ><br />
+      <input type="checkbox" id="meetups" /><label for="meetups">
+        Community Meetups</label
+      ><br />
+      <input type="checkbox" id="brown" /><label for="brown">
+        Brown Bag Sessions</label
+      ><br />
+      <input type="checkbox" id="hybrid" /><label for="hybrid">
+        Switching to Hybrid Mode</label
+      ><br />
+      <input type="checkbox" id="food" /><label for="food">
+        Food, Office etc.</label
+      ><br />
+
+      <label for="comments">Any comments or suggestions</label>
+      <textarea id="comments"></textarea><br />
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
